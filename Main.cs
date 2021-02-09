@@ -84,14 +84,14 @@ namespace WhatsApp_Robot
             pnProcess.Visible = false;
             PicBlur.Enabled = false;
             PicBlur.Visible = false;
-            PBB.AutoStart = false;
+            PBB.Animated = false;
             PBB.Visible = false;
             /*Progress loading end code*/
 
 
 
             //////////////////////////////////////
-            //LoadData();
+            LoadData();
             //////////////////////////////////////
 
             CheckForIllegalCrossThreadCalls = false;
@@ -405,7 +405,7 @@ namespace WhatsApp_Robot
             pnProcess.Visible = false;
             PicBlur.Enabled = false;
             PicBlur.Visible = false;
-            PBB.AutoStart = false;
+            PBB.Animated = false;
             PBB.Visible = false;
             PicBlur.SendToBack();
             pnProcess.SendToBack();
@@ -417,13 +417,13 @@ namespace WhatsApp_Robot
         {
             if (string.IsNullOrEmpty(txtMsg.Text))
             {
-                Bunifu.Snackbar.Show(this.FindForm(), "Digite qualquer coisa", 3000, Snackbar.Views.SnackbarDesigner.MessageTypes.Information);
+                bunifuSnackbar.Show(this, "Digite qualquer coisa", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information);
             }
             else
             {
                 if (btnStart.Text == "Conectar")
                 {
-                    Bunifu.Snackbar.Show(this.FindForm(), "Conecte Primeiro ao seu WhatsApp", 3000, Snackbar.Views.SnackbarDesigner.MessageTypes.Information);
+                    bunifuSnackbar.Show(this, "Conecte Primeiro ao seu WhatsApp", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information);
                 }
                 else
                 {
@@ -433,7 +433,7 @@ namespace WhatsApp_Robot
                     pnProcess.Visible = true;
                     PicBlur.Enabled = true;
                     PicBlur.Visible = true;
-                    PBB.AutoStart = true;
+                    PBB.Animated = true;
                     PBB.Visible = true;
                     PicBlur.BringToFront();
                     pnProcess.BringToFront();
@@ -753,6 +753,23 @@ namespace WhatsApp_Robot
         private void btnRefreshDgv_Click(object sender, EventArgs e)
         {
             LoadData();
+        }
+
+        int dir = 1;
+        private void stretch_Tick(object sender, EventArgs e)
+        {
+            if (PBB.Value == 90)
+            {
+                dir = -1;  // reduce
+                PBB.AnimationInterval = 4;
+            }
+            else if (PBB.Value == 10)
+            {
+                dir = +1; //expand
+                PBB.AnimationInterval = 2;
+            }
+
+            PBB.Value += dir;
         }
     }
 

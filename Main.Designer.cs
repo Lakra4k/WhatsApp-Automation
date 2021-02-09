@@ -130,8 +130,8 @@ namespace WhatsApp_Robot
             this.btnEnviar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pnProcess = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.lblProses = new Bunifu.UI.WinForms.BunifuLabel();
-            this.PBB = new Guna.UI2.WinForms.Guna2WinProgressIndicator();
             this.btnCancelSend = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.PBB = new Bunifu.UI.WinForms.BunifuCircleProgress();
             this.pnEmojiList = new Bunifu.UI.WinForms.BunifuPanel();
             this.EmojiListPages = new Bunifu.UI.WinForms.BunifuPages();
             this.Emojis1 = new System.Windows.Forms.TabPage();
@@ -146,6 +146,8 @@ namespace WhatsApp_Robot
             this.bunifuTransition3 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.bunifuTransition4 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.stretch = new System.Windows.Forms.Timer(this.components);
+            this.bunifuColorTransition1 = new Bunifu.UI.WinForms.BunifuColorTransition(this.components);
             this.pnDgvContacts.SuspendLayout();
             this.pnOpenAllContact.SuspendLayout();
             this.pnContactAction.SuspendLayout();
@@ -276,7 +278,7 @@ namespace WhatsApp_Robot
             this.btnHideSelectGroup.IdleIconLeftImage = null;
             this.btnHideSelectGroup.IdleIconRightImage = null;
             this.btnHideSelectGroup.IndicateFocus = false;
-            this.btnHideSelectGroup.Location = new System.Drawing.Point(245, 176);
+            this.btnHideSelectGroup.Location = new System.Drawing.Point(240, 176);
             this.btnHideSelectGroup.Name = "btnHideSelectGroup";
             this.btnHideSelectGroup.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnHideSelectGroup.OnDisabledState.BorderRadius = 1;
@@ -335,7 +337,7 @@ namespace WhatsApp_Robot
             this.bunifuTransition3.SetDecoration(this.pnOpenAllContact, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.pnOpenAllContact.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.pnOpenAllContact.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.pnOpenAllContact.Location = new System.Drawing.Point(39, 167);
+            this.pnOpenAllContact.Location = new System.Drawing.Point(36, 167);
             this.pnOpenAllContact.Name = "pnOpenAllContact";
             this.pnOpenAllContact.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.pnOpenAllContact.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
@@ -2644,6 +2646,7 @@ namespace WhatsApp_Robot
             this.btnEnviar.TextMarginLeft = 0;
             this.btnEnviar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnEnviar.UseDefaultRadiusAndThickness = true;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // pnProcess
             // 
@@ -2652,8 +2655,8 @@ namespace WhatsApp_Robot
             this.pnProcess.BorderRadius = 20;
             this.pnProcess.BorderThickness = 1;
             this.pnProcess.Controls.Add(this.lblProses);
-            this.pnProcess.Controls.Add(this.PBB);
             this.pnProcess.Controls.Add(this.btnCancelSend);
+            this.pnProcess.Controls.Add(this.PBB);
             this.bunifuTransition4.SetDecoration(this.pnProcess, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.pnProcess, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuTransition2.SetDecoration(this.pnProcess, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
@@ -2687,7 +2690,7 @@ namespace WhatsApp_Robot
             this.bunifuTransition3.SetDecoration(this.lblProses, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.lblProses.Font = new System.Drawing.Font("Rubik", 10F, System.Drawing.FontStyle.Bold);
             this.lblProses.ForeColor = System.Drawing.Color.White;
-            this.lblProses.Location = new System.Drawing.Point(80, 87);
+            this.lblProses.Location = new System.Drawing.Point(81, 89);
             this.lblProses.Name = "lblProses";
             this.lblProses.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblProses.Size = new System.Drawing.Size(77, 18);
@@ -2695,21 +2698,6 @@ namespace WhatsApp_Robot
             this.lblProses.Text = "0 / 0";
             this.lblProses.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblProses.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // PBB
-            // 
-            this.PBB.AutoStart = true;
-            this.PBB.CircleSize = 1F;
-            this.bunifuTransition3.SetDecoration(this.PBB, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.PBB, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.PBB, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition4.SetDecoration(this.PBB, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.PBB.Location = new System.Drawing.Point(64, 42);
-            this.PBB.Name = "PBB";
-            this.PBB.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(220)))), ((int)(((byte)(161)))));
-            this.PBB.Size = new System.Drawing.Size(109, 109);
-            this.PBB.TabIndex = 77;
-            this.PBB.UseTransparentBackground = true;
             // 
             // btnCancelSend
             // 
@@ -2803,6 +2791,46 @@ namespace WhatsApp_Robot
             this.btnCancelSend.TextMarginLeft = 0;
             this.btnCancelSend.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnCancelSend.UseDefaultRadiusAndThickness = true;
+            // 
+            // PBB
+            // 
+            this.PBB.Animated = true;
+            this.PBB.AnimationInterval = 2;
+            this.PBB.AnimationSpeed = 1;
+            this.PBB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.PBB.CircleMargin = 10;
+            this.bunifuTransition2.SetDecoration(this.PBB, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.PBB, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition4.SetDecoration(this.PBB, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.PBB, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.PBB.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold);
+            this.PBB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.PBB.IsPercentage = false;
+            this.PBB.LineProgressThickness = 10;
+            this.PBB.LineThickness = 10;
+            this.PBB.Location = new System.Drawing.Point(58, 37);
+            this.PBB.Name = "PBB";
+            this.PBB.ProgressAnimationSpeed = 200;
+            this.PBB.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.PBB.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(220)))), ((int)(((byte)(161)))));
+            this.PBB.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(220)))), ((int)(((byte)(161)))));
+            this.PBB.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
+            this.PBB.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
+            this.PBB.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
+            this.PBB.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.PBB.Size = new System.Drawing.Size(120, 120);
+            this.PBB.SubScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.PBB.SubScriptMargin = new System.Windows.Forms.Padding(5, -20, 0, 0);
+            this.PBB.SubScriptText = "";
+            this.PBB.SuperScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.PBB.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
+            this.PBB.SuperScriptText = "";
+            this.PBB.TabIndex = 16;
+            this.PBB.Text = "30";
+            this.PBB.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.PBB.Value = 30;
+            this.PBB.ValueByTransition = 30;
+            this.PBB.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             // 
             // pnEmojiList
             // 
@@ -3062,6 +3090,24 @@ namespace WhatsApp_Robot
             this.bunifuElipse1.ElipseRadius = 10;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // stretch
+            // 
+            this.stretch.Interval = 30;
+            this.stretch.Tick += new System.EventHandler(this.stretch_Tick);
+            // 
+            // bunifuColorTransition1
+            // 
+            this.bunifuColorTransition1.AutoTransition = false;
+            this.bunifuColorTransition1.ColorArray = new System.Drawing.Color[] {
+        System.Drawing.Color.Purple,
+        System.Drawing.Color.LightBlue,
+        System.Drawing.Color.Orange};
+            this.bunifuColorTransition1.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(220)))), ((int)(((byte)(161)))));
+            this.bunifuColorTransition1.Interval = 5;
+            this.bunifuColorTransition1.ProgessValue = 0;
+            this.bunifuColorTransition1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(220)))), ((int)(((byte)(161)))));
+            this.bunifuColorTransition1.TransitionControl = this.PBB;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3185,7 +3231,6 @@ namespace WhatsApp_Robot
         private Bunifu.UI.WinForms.BunifuTextBox txtMsg;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnEnviar;
         private Bunifu.UI.WinForms.BunifuShadowPanel pnProcess;
-        private Guna.UI2.WinForms.Guna2WinProgressIndicator PBB;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnCancelSend;
         private Bunifu.UI.WinForms.BunifuLabel lblProses;
         private Bunifu.UI.WinForms.BunifuPanel pnEmojiList;
@@ -3199,5 +3244,8 @@ namespace WhatsApp_Robot
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
         private Bunifu.UI.WinForms.BunifuShapes bunifuShapes1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.UI.WinForms.BunifuCircleProgress PBB;
+        private System.Windows.Forms.Timer stretch;
+        private Bunifu.UI.WinForms.BunifuColorTransition bunifuColorTransition1;
     }
 }
