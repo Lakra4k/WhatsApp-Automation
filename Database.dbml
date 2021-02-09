@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="uMarketing" Class="DatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=GEEK4K;Initial Catalog=uMarketing;Integrated Security=True" SettingsObjectName="WhatsApp_Robot.Properties.Settings" SettingsPropertyName="uMarketingConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.cliente" Member="clientes">
+    <Type Name="cliente">
+      <Column Name="Cliente_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ClienteNome" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Telefone" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Endereco" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GRUPO_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.grupo" Member="grupos">
+    <Type Name="grupo">
+      <Column Name="GRUPO_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GRUPO_NAME" Member="GRUPO_NOME" Storage="_GRUPO_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
