@@ -1,5 +1,4 @@
-﻿
-namespace WhatsApp_Robot
+﻿namespace WhatsApp_Robot
 {
     partial class frmLogin
     {
@@ -30,19 +29,21 @@ namespace WhatsApp_Robot
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Telerik.WinControls.UI.RadValidationRule radValidationRule3 = new Telerik.WinControls.UI.RadValidationRule();
+            Telerik.WinControls.UI.RadValidationRule radValidationRule4 = new Telerik.WinControls.UI.RadValidationRule();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.btnClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -66,9 +67,14 @@ namespace WhatsApp_Robot
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.radValidationProvider1 = new Telerik.WinControls.UI.RadValidationProvider(this.components);
+            this.radWaitingBar = new Telerik.WinControls.UI.RadWaitingBar();
+            this.dotsLineWaitingBarIndicatorElement1 = new Telerik.WinControls.UI.DotsLineWaitingBarIndicatorElement();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radValidationProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radWaitingBar)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Separator1
@@ -226,26 +232,26 @@ namespace WhatsApp_Robot
             this.txtUser.Modified = false;
             this.txtUser.Multiline = false;
             this.txtUser.Name = "txtUser";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(255)))), ((int)(((byte)(175)))));
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtUser.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtUser.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(219)))), ((int)(((byte)(165)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtUser.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(43)))));
-            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(43)))));
-            stateProperties4.ForeColor = System.Drawing.Color.White;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtUser.OnIdleState = stateProperties4;
+            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(255)))), ((int)(((byte)(175)))));
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtUser.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtUser.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(219)))), ((int)(((byte)(165)))));
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtUser.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(43)))));
+            stateProperties12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(43)))));
+            stateProperties12.ForeColor = System.Drawing.Color.White;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtUser.OnIdleState = stateProperties12;
             this.txtUser.Padding = new System.Windows.Forms.Padding(3);
             this.txtUser.PasswordChar = '\0';
             this.txtUser.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -323,26 +329,26 @@ namespace WhatsApp_Robot
             this.txtPass.Modified = false;
             this.txtPass.Multiline = false;
             this.txtPass.Name = "txtPass";
-            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(255)))), ((int)(((byte)(175)))));
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPass.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtPass.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(219)))), ((int)(((byte)(165)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPass.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(43)))));
-            stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(43)))));
-            stateProperties8.ForeColor = System.Drawing.Color.White;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPass.OnIdleState = stateProperties8;
+            stateProperties13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(255)))), ((int)(((byte)(175)))));
+            stateProperties13.FillColor = System.Drawing.Color.Empty;
+            stateProperties13.ForeColor = System.Drawing.Color.Empty;
+            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPass.OnActiveState = stateProperties13;
+            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPass.OnDisabledState = stateProperties14;
+            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(219)))), ((int)(((byte)(165)))));
+            stateProperties15.FillColor = System.Drawing.Color.Empty;
+            stateProperties15.ForeColor = System.Drawing.Color.Empty;
+            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPass.OnHoverState = stateProperties15;
+            stateProperties16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(43)))));
+            stateProperties16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(43)))));
+            stateProperties16.ForeColor = System.Drawing.Color.White;
+            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPass.OnIdleState = stateProperties16;
             this.txtPass.Padding = new System.Windows.Forms.Padding(3);
             this.txtPass.PasswordChar = '\0';
             this.txtPass.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -474,11 +480,11 @@ namespace WhatsApp_Robot
             this.btnLogin.ColorContrastOnClick = 45;
             this.btnLogin.ColorContrastOnHover = 45;
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnLogin.CustomizableEdges = borderEdges4;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.btnLogin.CustomizableEdges = borderEdges8;
             this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLogin.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLogin.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -502,7 +508,7 @@ namespace WhatsApp_Robot
             this.btnLogin.IdleIconLeftImage = null;
             this.btnLogin.IdleIconRightImage = null;
             this.btnLogin.IndicateFocus = true;
-            this.btnLogin.Location = new System.Drawing.Point(483, 369);
+            this.btnLogin.Location = new System.Drawing.Point(488, 370);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLogin.OnDisabledState.BorderRadius = 8;
@@ -528,11 +534,11 @@ namespace WhatsApp_Robot
             this.btnLogin.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btnLogin.OnIdleState.IconLeftImage = null;
             this.btnLogin.OnIdleState.IconRightImage = null;
-            this.btnLogin.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(220)))), ((int)(((byte)(161)))));
+            this.btnLogin.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(220)))), ((int)(((byte)(161)))));
             this.btnLogin.OnPressedState.BorderRadius = 8;
             this.btnLogin.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnLogin.OnPressedState.BorderThickness = 1;
-            this.btnLogin.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(220)))), ((int)(((byte)(161)))));
+            this.btnLogin.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(220)))), ((int)(((byte)(161)))));
             this.btnLogin.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnLogin.OnPressedState.IconLeftImage = null;
             this.btnLogin.OnPressedState.IconRightImage = null;
@@ -600,11 +606,11 @@ namespace WhatsApp_Robot
             this.btnEye.ColorContrastOnClick = 45;
             this.btnEye.ColorContrastOnHover = 45;
             this.btnEye.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnEye.CustomizableEdges = borderEdges2;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btnEye.CustomizableEdges = borderEdges6;
             this.btnEye.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEye.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEye.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -690,11 +696,11 @@ namespace WhatsApp_Robot
             this.btnEyeNo.ColorContrastOnClick = 45;
             this.btnEyeNo.ColorContrastOnHover = 45;
             this.btnEyeNo.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnEyeNo.CustomizableEdges = borderEdges1;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnEyeNo.CustomizableEdges = borderEdges5;
             this.btnEyeNo.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEyeNo.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEyeNo.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -816,11 +822,11 @@ namespace WhatsApp_Robot
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges3;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges7;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -908,12 +914,47 @@ namespace WhatsApp_Robot
             this.bunifuElipse1.ElipseRadius = 10;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // radValidationProvider1
+            // 
+            radValidationRule3.ToolTipText = "Porfavor insira o Usuário";
+            radValidationRule3.Value = "@";
+            radValidationRule4.Operator = Telerik.WinControls.Data.FilterOperator.IsNotLike;
+            radValidationRule4.ToolTipText = "Password não pode estar vazio";
+            radValidationRule4.Value = " ";
+            this.radValidationProvider1.ValidationRules.AddRange(new Telerik.WinControls.Data.FilterDescriptor[] {
+            radValidationRule3,
+            radValidationRule4});
+            // 
+            // radWaitingBar
+            // 
+            this.radWaitingBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(220)))), ((int)(((byte)(161)))));
+            this.radWaitingBar.Location = new System.Drawing.Point(562, 377);
+            this.radWaitingBar.Name = "radWaitingBar";
+            this.radWaitingBar.Size = new System.Drawing.Size(117, 24);
+            this.radWaitingBar.TabIndex = 43;
+            this.radWaitingBar.Text = "radWaitingBar1";
+            this.radWaitingBar.Visible = false;
+            this.radWaitingBar.WaitingIndicators.Add(this.dotsLineWaitingBarIndicatorElement1);
+            this.radWaitingBar.WaitingSpeed = 75;
+            this.radWaitingBar.WaitingStep = 2;
+            this.radWaitingBar.WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.DotsLine;
+            // 
+            // dotsLineWaitingBarIndicatorElement1
+            // 
+            this.dotsLineWaitingBarIndicatorElement1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(220)))), ((int)(((byte)(161)))));
+            this.dotsLineWaitingBarIndicatorElement1.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(220)))), ((int)(((byte)(161)))));
+            this.dotsLineWaitingBarIndicatorElement1.BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(220)))), ((int)(((byte)(161)))));
+            this.dotsLineWaitingBarIndicatorElement1.BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(220)))), ((int)(((byte)(161)))));
+            this.dotsLineWaitingBarIndicatorElement1.ElementColor = System.Drawing.Color.White;
+            this.dotsLineWaitingBarIndicatorElement1.Name = "dotsLineWaitingBarIndicatorElement1";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(840, 560);
+            this.Controls.Add(this.radWaitingBar);
             this.Controls.Add(this.btnEyeNo);
             this.Controls.Add(this.btnEye);
             this.Controls.Add(this.bunifuLabel6);
@@ -942,6 +983,8 @@ namespace WhatsApp_Robot
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radValidationProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radWaitingBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -971,5 +1014,8 @@ namespace WhatsApp_Robot
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Telerik.WinControls.UI.RadValidationProvider radValidationProvider1;
+        private Telerik.WinControls.UI.RadWaitingBar radWaitingBar;
+        private Telerik.WinControls.UI.DotsLineWaitingBarIndicatorElement dotsLineWaitingBarIndicatorElement1;
     }
 }

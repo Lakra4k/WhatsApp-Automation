@@ -72,6 +72,7 @@ namespace WhatsApp_Robot
             bunifuSnackbar.Show(this, "La***4k@outlook.com, Seja Bem-vindo(a)!", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 5000);
 
             pbProfileImage.BorderRadius = 10;
+            PicBox.Image = null;
             /*PicBox.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
             PicBox.BorderRadius = 5;
             PicBox.Location = new Point(321, 233);
@@ -477,16 +478,14 @@ namespace WhatsApp_Robot
 
         private void btnEmojiFulList_Click(object sender, EventArgs e)
         {
-            if (!pnEmojiList.Visible || !bunifuShapes1.Visible)
+            if (!pnEmojiList.Visible)
             {
                 btnTextStyleList.Text = "";
                 bunifuTransition3.ShowSync(pnEmojiList);
-                bunifuTransition3.ShowSync(bunifuShapes1);
                 //txtMsg.Focus();
             }
             else
                 bunifuTransition3.HideSync(pnEmojiList);
-                bunifuTransition3.HideSync(bunifuShapes1);
         }
 
         // Verificar se e number
@@ -626,14 +625,13 @@ namespace WhatsApp_Robot
 
                     PicBlur.SendToBack();
 
-
-                    Bunifu.Snackbar.Show(this.FindForm(), "Conecte Primeiro ao seu WhatsApp", 3000, Snackbar.Views.SnackbarDesigner.MessageTypes.Information);
+                    bunifuSnackbar.Show(this, "Conecte Primeiro ao seu WhatsApp", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information);
 
                     break;
 
                 case "del":
 
-                    Bunifu.Snackbar.Show(this.FindForm(), "Apagado", 3000, Snackbar.Views.SnackbarDesigner.MessageTypes.Information);
+                    bunifuSnackbar.Show(this, "Apagado", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information);
 
                     break;
             }

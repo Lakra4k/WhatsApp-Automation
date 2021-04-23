@@ -555,9 +555,9 @@ namespace WhatsApp_Robot
             this.txtEndereco.Padding = new System.Windows.Forms.Padding(3);
             this.txtEndereco.PasswordChar = '\0';
             this.txtEndereco.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtEndereco.PlaceholderText = "Email";
+            this.txtEndereco.PlaceholderText = "Morada";
             this.txtEndereco.ReadOnly = false;
-            this.txtEndereco.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtEndereco.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtEndereco.SelectedText = "";
             this.txtEndereco.SelectionLength = 0;
             this.txtEndereco.SelectionStart = 0;
@@ -569,7 +569,7 @@ namespace WhatsApp_Robot
             this.txtEndereco.TextMarginBottom = 0;
             this.txtEndereco.TextMarginLeft = 3;
             this.txtEndereco.TextMarginTop = 0;
-            this.txtEndereco.TextPlaceholder = "Email";
+            this.txtEndereco.TextPlaceholder = "Morada";
             this.txtEndereco.UseSystemPasswordChar = false;
             this.txtEndereco.WordWrap = true;
             // 

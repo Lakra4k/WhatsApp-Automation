@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using Bunifu.UI;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -41,7 +42,7 @@ namespace WhatsApp_Robot
             }
             catch(Exception erro)
             {
-                Bunifu.Snackbar.Show(this.FindForm(), erro.Message, 3000, Snackbar.Views.SnackbarDesigner.MessageTypes.Error);
+                //Bunifu.Snackbar.Show(this.FindForm(), erro.Message, 3000, Snackbar.Views.SnackbarDesigner.MessageTypes.Error);
             }
         }
 
